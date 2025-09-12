@@ -5,10 +5,10 @@
 A production-ready machine learning sentiment analysis API that classifies text into 3 sentiment : positive, negative or neutral.
 Build with FastAPI, scikit-learn and docker for easy deployment.
 
-**Model Type:** TF-IDF+LOgistic Regression
-**Dataset:** IMDB Movie Reviews from kaggle
-**Deployment:** FastAPI + Docker +K8
-***Monitoring:** Prometheus + Grafana
+**Model Type:** TF-IDF+LOgistic Regression  
+**Dataset:** IMDB Movie Reviews from kaggle  
+**Deployment:** FastAPI + Docker +K8  
+***Monitoring:** Prometheus + Grafana  
 
 ## Quick Start
 
