@@ -1,1 +1,3 @@
-IMDB_dataset.csv
+data/
+sentiment-analysis-api/
+venv/

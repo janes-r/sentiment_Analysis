@@ -1,0 +1,21 @@
+# Core ML Libraries
+pandas
+numpy
+scikit-learn
+
+# Natural Language Processing
+nltk
+
+# API Framework (for later steps)
+fastapi
+uvicorn
+pydantic
+
+# Monitoring (for later steps)
+prometheus-client
+
+# Utilities
+python-multipart
+
+
+setuptools
