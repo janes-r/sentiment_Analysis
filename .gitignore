@@ -1,3 +1,11 @@
+# Python cache files
+__pycache__/
+*/__pycache__/
+**/__pycache__/
 data/
 sentiment-analysis-api/
 venv/
+.venv/
+model/artifacts/
+.model/artifacts/
+*.log

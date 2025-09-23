@@ -17,5 +17,5 @@ prometheus-client
 # Utilities
 python-multipart
 
-
+requests
 setuptools

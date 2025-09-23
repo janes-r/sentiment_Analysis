@@ -1,3 +1,8 @@
+import sys
+import os
+# Add project root to Python path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pandas as pd
 import numpy as np
 import pickle
@@ -7,7 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import nltk
-from preprocess import TextPreprocessor
+from model.preprocess import TextPreprocessor
 import logging
 
 #Setup logging
@@ -48,14 +53,16 @@ def train_sentiment_model():
     sentiment_counts = df['sentiment'].value_counts()
     logger.info(f"Data distribution:\n{sentiment_counts}")
 
-    sentiment_map = {'positive': 2, 'neutral': 1, 'negative': 0}
-
+    #sentiment_map = {'positive': 2, 'neutral': 1, 'negative': 0}
+    sentiment_map = {'positive': 1, 'negative': 0}
     # Handle IMBD dataset
+    df['label'] = df['sentiment'].map(sentiment_map)
+    '''
     if 'sentiment' in df.columns:
         df['label'] = df['sentiment'].map(sentiment_map)
     else:
         df['label'] = df['sentiment'].map({'positive': 2,'negative': 0})
-
+    '''
     # Drop any rows with missing labels
     df = df.dropna(subset=['label'])
 
