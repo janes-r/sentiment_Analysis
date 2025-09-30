@@ -7,5 +7,6 @@ sentiment-analysis-api/
 venv/
 .venv/
 model/artifacts/
+model/__pycache__/
 .model/artifacts/
 *.log

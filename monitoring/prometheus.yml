@@ -1,0 +1,12 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'sentiment-api'
+    metrics_path: '/metrics'
+    static_configs:
+      - targets: ['sentiment-api:8000']
+        labels:
+          service: 'sentiment-analysis'
+          environment: 'production'
