@@ -12,9 +12,9 @@ Built with FastAPI, scikit-learn and Docker for easy deployment and monitoring w
 
 ## Live Demo
 
-**API Endpoint:** https://sentimentanalysis-production-fa3b.up.railway.app  
-**Interactive Docs:** https://sentimentanalysis-production-fa3b.up.railway.app/docs  
-**Metrics:** https://sentimentanalysis-production-fa3b.up.railway.app/metrics  
+**API Endpoint:** https://sentimentanalysis-production-a29c.up.railway.app  
+**Interactive Docs:** https://sentimentanalysis-production-a29c.up.railway.app/docs  
+**Metrics:** https://sentimentanalysis-production-a29c.up.railway.app/metrics  
 
 ## Quick Start
 
